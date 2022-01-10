@@ -1,0 +1,29 @@
+$color-black: black;
+$color-white: white;
+$color-dark: #023047;
+$color-light: #faedcb;
+
+$color-main-one: #ff7b00;
+$color-main-two: #ff9500;
+$color-main-three: #ffaa00;
+$color-main-four: #ffc300;
+$color-main-five: #ffdd00;
+
+$color-lvl-0: #ff595e;
+$color-lvl-1: $color-main-five;
+$color-lvl-2: #8ac926;
+
+$font-main: 'Josefin Sans', sans-serif;
+$font-brand: 'Saira Condensed', sans-serif;
+$font-text: 'Montserrat Alternates', sans-serif;
+
+$radius: 5px;
+$base-size: 10px;
+
+$transition-fast: all 0.3s;
+$transition-mid: all 0.5s;
+$transition-slow: all 1s;
+$transition-slower: all 2s;
+
+$box-shadow-sm: 0px 1px 5px 1px $color-dark;
+$box-shadow-md: 0px 2px 10px 2px $color-dark;
