@@ -1,9 +1,18 @@
 import React from 'react';
+// version with destructure useState
+// v2:
+// import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Input = ({ secretWord }) => {
+const Input = ({ success, secretWord }) => {
  
   const [currentGuess, setCurrentGuess] = React.useState('');
+  // v2:
+  // const [currentGuess, setCurrentGuess] = useState('');
+
+  if (success) {
+    return <div data-test='component-input' />;
+  }
 
   return (
     <div data-test='component-input'>
@@ -19,6 +28,10 @@ const Input = ({ secretWord }) => {
         <button
           data-test='submit-button'
           className='btn btn-primary mb-2'
+          onClick={(e) => {
+            e.preventDefault();
+            setCurrentGuess('');
+          }}
         >
           Submit
         </button>
@@ -28,6 +41,7 @@ const Input = ({ secretWord }) => {
 };
 
 Input.propTypes = {
+  success: PropTypes.bool,
   secretWord: PropTypes.string.isRequired,
 };
 
