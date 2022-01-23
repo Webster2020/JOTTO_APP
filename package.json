@@ -70,6 +70,7 @@
     "shortid": "^2.2.16"
   },
   "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "husky": "4.2",
     "lint-staged": "^11.0.0",
     "redux-devtools-extension": "^2.13.9"
