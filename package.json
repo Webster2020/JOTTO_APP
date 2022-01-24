@@ -73,6 +73,7 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "husky": "4.2",
     "lint-staged": "^11.0.0",
+    "moxios": "^0.4.0",
     "redux-devtools-extension": "^2.13.9"
   }
 }
